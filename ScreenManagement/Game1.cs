@@ -41,9 +41,15 @@ namespace ScreenManagement
                 Exit();
             }
 
-            ScreenManager.Update(gameTime);
+            if (Keyboard.GetState().IsKeyDown(Keys.D))
+            {
+                ScreenManager.GoToScreen("screen2");
+            }
 
-            // TODO: Add your update logic here
+            if (Keyboard.GetState().IsKeyDown(Keys.A))
+            {
+                ScreenManager.GoToScreen("screen1");
+            }
 
             base.Update(gameTime);
         }

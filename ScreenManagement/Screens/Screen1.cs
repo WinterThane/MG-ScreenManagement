@@ -1,6 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
 using ScreenManagement.ScreenManagr;
 
 namespace ScreenManagement.Screens
@@ -16,11 +15,6 @@ namespace ScreenManagement.Screens
 
         public override void Update(GameTime gameTime)
         {
-            if (Keyboard.GetState().IsKeyDown(Keys.D)) 
-            {
-                ScreenManager.GoToScreen("screen2");
-            }
-
             base.Update(gameTime);
         }
 
